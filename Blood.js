@@ -35,3 +35,10 @@ function Set_Donar_No() {
 }
 
  Set_Donar_No();
+
+ function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+    behavior:"smooth"
+    });
+  }

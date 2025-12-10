@@ -51,7 +51,12 @@
      
 
       <div class="profile">
-        <img id="profile_Img" src="Image/images.jfif" alt="Profile" />
+         <img id="profile_Img" src="Image/images.jfif" alt="Profile" /> 
+
+        <div class="guest-btn">
+          <span>Guest</span>
+          <span>Login</span>
+       </div>
         <img id="Menu_Img" src="Image/Menu.png" alt="Profile" />
         <ul id="nav-links-menu">
         
@@ -79,17 +84,6 @@
       </div>
     </nav>
 
-   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Correct Bootstrap CSS -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-  >
 </head>
 <body>
 
@@ -170,6 +164,188 @@
         <h3>Donor Login</h3>
     </div>
 </div>
+
+<h2 class="section-title">About us</h2>
+
+<section class="about-section">
+  <div class="about-container">
+    
+    <!-- Left Image Side -->
+    <div class="about-image">
+      <img src="Image/Hospital.webp" alt="Donor and Nurse">
+    </div>
+
+    <!-- Right Content Side -->
+    <div class="about-content">
+      <h2>About Our Blood Bank</h2>
+      <p>
+        We aim to connect voluntary blood donors with patients in need through a 
+        reliable and efficient platform. Our Blood Bank ensures timely blood 
+        availability, saving lives and making donation simpler.
+      </p>
+
+      <a href="#" class="donate-btn">DONATE NOW</a>
+    </div>
+
+  </div>
+</section>
+
+<h2 class="section-title">Learn About Donation</h2>
+
+<section class="donation-section">
+
+    
+    <p class="donation-subtitle">Select your Blood Type</p>
+
+    <!-- BLOOD TYPE BUTTONS -->
+    <div class="blood-types">
+        <button class="type active">A+</button>
+        <button class="type">O+</button>
+        <button class="type">B+</button>
+        <button class="type">AB+</button>
+        <button class="type">A−</button>
+        <button class="type">O−</button>
+        <button class="type">B−</button>
+        <button class="type">AB−</button>
+    </div>
+
+    <div class="donation-container">
+
+        <!-- LEFT SIDE BOXES -->
+        <div class="left-info">
+
+            <div class="info-box yellow-box">
+                <div >
+                   <img class="avatar" src="Image/icon.png" alt="">
+                </div>
+                <div>
+                    <h3>You can take from</h3>
+                    <p>O+ O− A+ A−</p>
+                </div>
+            </div>
+
+            <div class="info-box blue-box">
+                <div >
+                  <img  class="avatar" src="Image/icon.png" alt="">
+                </div>
+                <div>
+                    <h3>You can give to</h3>
+                    <p>A+ AB+</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="right-image">
+            <img src="Image/doctor.png" alt="Donation Image">
+            <p class="save-life-text">
+                One Blood Donation can save up to <br> <span>Three Lives</span>
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="types-donation-section">
+
+    <h2 class="types-title">Types of Donation</h2>
+
+    <p class="types-desc">
+        The average human body contains about five litres of blood, which is made of several cellular 
+        and non-cellular components such as 
+        <span class="highlight">Red blood cell</span>, 
+        <span class="highlight">Platelet</span>, 
+        and 
+        <span class="highlight">Plasma</span>.
+    </p>
+
+</section>
+
+
+
+
+<div class="container">
+  <!-- LEFT SIDE TABS -->
+  <div class="tabs">
+    <button class="tab active">Packed Red Blood Cells</button>
+    <button class="tab">Plasma</button>
+    <button class="tab">Platelets</button>
+  </div>
+
+  <!-- RIGHT SIDE CONTENT -->
+  <div class="content">
+    <h1>What is it?</h1>
+    <p>
+      Blood collected straight from the donor into a blood bag and mixed
+      with an anticoagulant is called whole blood. It is then centrifuged to
+      separate red cells, which are mixed with a preservative to be called
+      packed red blood cells.
+    </p>
+
+    <h1>Who can donate?</h1>
+    <p>
+      You need to be 18–65 years old, weigh 45 kg or more, and be fit and healthy.
+    </p>
+
+    <h1>Used For?</h1>
+    <p>
+      Used for anemia, blood loss, and surgical patients.
+    </p>
+  </div>
+
+  <!-- RIGHT SIDE VIDEO -->
+  <div class="media">
+    <video autoplay loop muted playsinline>
+      <source src="Image/blood_video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+
+
+<div class="scroll-wrapper">
+  <div class="scroll-track">
+    
+    <div class="card">
+      <div class="icon">⏱️</div>
+      <h3>Your blood can save lives!</h3>
+      <p>Be a hero today.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🥤</div>
+      <h3>Free refreshments</h3>
+      <p>Donation is safe and healthy.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💵</div>
+      <h3>It costs nothing</h3>
+      <p>Give blood, stay healthy!</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">❤️</div>
+      <h3>Save a life</h3>
+      <p>Every donor is a hero.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="footer">
+  <p>© 2025 Blood Donation | All Rights Reserved by 
+     <span class="author">Vineeth Kumar</span>
+  </p>
+
+  <button class="scrollTopBtn" onclick="scrollToTop()">
+    ▲
+  </button>
+</footer>
 
 </body>
 </html>

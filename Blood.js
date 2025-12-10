@@ -36,9 +36,21 @@ function Set_Donar_No() {
 
  Set_Donar_No();
 
- function scrollToTop() {
+
+  const btn = document.querySelector(".scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  function scrollToTop() {
     window.scrollTo({
       top: 0,
-    behavior:"smooth"
+      behavior: "smooth"
     });
   }
+

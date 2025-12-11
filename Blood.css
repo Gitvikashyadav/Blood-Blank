@@ -93,6 +93,56 @@
     
 }
 
+.Dropdown_profile_Img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100%;              /* place JUST below the text */
+    left: 0;
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;          /* hidden initially */
+    z-index: 10;
+    font-weight: bold;
+    gap: 18px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    margin-left: -32px;
+
+}
+.Dropdown_profile_Img.active {
+  display: flex;
+}
+
+
+.Dropdown_profile_Img2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 14%;              /* place JUST below the text */
+   
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;          /* hidden initially */
+    z-index: 10;
+    font-weight: bold;
+    gap: 18px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+   
+
+}
+
+.Dropdown_profile_Img2.active {
+  display: flex;
+}
+
 
 #Menu_Img{
      width: 50px;
@@ -104,9 +154,9 @@
 .guest-btn {
   background: #b0003a;
   color: white;
-  padding: 10px 22px;
+  padding: 5px 12px;
   border-radius: 50% / 40%;
-  display: flex;
+  
   flex-direction: column;
   align-items: center;
   font-weight: bold;
@@ -245,7 +295,7 @@
 
 
 .con_Donate_Blood {
-    width: 150px;
+    width: 185px;
     height: 150px;
     position: absolute;
     top: 100%;              /* place JUST below the text */
@@ -281,6 +331,8 @@
 }
 
 .con_Donate_Blood_menu{
+    width: 170px;
+    height: 120px;
      left: 0;
     background: white;
     color: black;
@@ -292,14 +344,15 @@
     justify-content: space-around;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
-    width: 160px;
-    height: 120px;
+    
     position: absolute;
     z-index: 10;
 
 }
 
 .con_Looking_For_Blood_menu{
+     width: 150px;
+    height: 120px;
     position: absolute;
     display: none;
     left: 0;
@@ -312,8 +365,7 @@
     justify-content: space-around;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
-    width: 120px;
-    height: 120px;
+   
     z-index: 10;
 
 }
@@ -362,10 +414,11 @@
     gap: 15px;
     font-weight: bolder;
     font-family: "Poppins", sans-serif;
+    font-size: 20px;
     
     height: 100px;
     
-    background-color: rgb(235, 170, 181);
+    background-color: rgb(227, 138, 153);
     color: white;
    
 
@@ -383,11 +436,14 @@
     width: 50%;
     color: white;
     height: 100px;
-
+    font-size: 20px;
     background-color: rgb(128, 15, 15);
 }
 
+#Blood_units_No,#Donar_No{
+    font-size: 35px;
 
+}
 
 
 
@@ -870,5 +926,7 @@
         display: none;
     }
 
-    
+    .guest-btn{
+        display: none;
+    }
 }

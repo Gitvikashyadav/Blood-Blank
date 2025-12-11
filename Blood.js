@@ -54,3 +54,33 @@ function Set_Donar_No() {
     });
   }
 
+
+  const guest_btn=document.querySelector('.guest-btn')
+  const profile_Img=document.querySelector('#profile_Img')
+  console.log(guest_btn);
+  
+  guest_btn.addEventListener('click',(e)=>{
+    guest_btn.style.display='none'
+    profile_Img.style.display='block'
+    console.log('click',e);
+    
+    
+
+  })
+
+
+ 
+  const Dropdown_profile_Img=document.querySelector('.Dropdown_profile_Img')
+  profile_Img.addEventListener('click',()=>{
+    console.log("click profile img");
+     Dropdown_profile_Img.classList.toggle("active");
+    
+    // Dropdown_profile_Img.style.display='flex'
+
+  })
+
+  const Dropdown_profile_Img2=document.querySelector('.Dropdown_profile_Img2')
+  const profile_Menu_Img=document.querySelector('#profile_Menu_Img')
+  profile_Menu_Img.addEventListener('click',()=>{
+     Dropdown_profile_Img2.classList.toggle("active");
+  })

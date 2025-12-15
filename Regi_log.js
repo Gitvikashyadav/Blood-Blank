@@ -3,17 +3,26 @@
   const Nav_btn=document.getElementById('Nav_btn');
   const wrapper_Regi_Con=document.querySelector('.wrapper')
   const wrapper_login_Con=document.querySelector('.wrapper_login')
+  let c=0
+  if(c==0){
+    console.log('call');
+    
+   wrapper_login_Con .classList.add("open");
+  c++
+  }
+  
   Nav_btn.addEventListener('click',(e)=>{
     console.log();
     if(e.target.innerText=='Register'){
         Nav_btn.innerText='Login'
-       
-        wrapper_Regi_Con .classList.add("open");
         wrapper_login_Con.classList.remove("open");
+        wrapper_Regi_Con .classList.add("open");
+       
         
     }else{//Login button triger
 
         Nav_btn.innerText='Register'
+         login_wrapper_Con.style.display='none'
         wrapper_Regi_Con.classList.remove("open");
         wrapper_login_Con .classList.add("open");
        

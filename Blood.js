@@ -2,12 +2,14 @@ const menuIcon = document.getElementById("Menu_Img");
 const menuPanel = document.getElementById("nav-links-menu");
 
 menuIcon.addEventListener("click", () => {
+  console.log('clik menu');
+  
   menuPanel.classList.toggle("active");
 });
- const body=document.querySelector('body')
- body.addEventListener('click',()=>{
-  menuPanel.style.display='none'
- })
+//  const body=document.querySelector('body')
+//  body.addEventListener('click',()=>{
+//   menuPanel.style.display='none'
+//  })
 
 
 

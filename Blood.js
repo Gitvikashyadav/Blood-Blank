@@ -4,7 +4,10 @@ const menuPanel = document.getElementById("nav-links-menu");
 menuIcon.addEventListener("click", () => {
   menuPanel.classList.toggle("active");
 });
-
+ const body=document.querySelector('body')
+ body.addEventListener('click',()=>{
+  menuPanel.style.display='none'
+ })
 
 
 
@@ -84,3 +87,6 @@ function Set_Donar_No() {
   profile_Menu_Img.addEventListener('click',()=>{
      Dropdown_profile_Img2.classList.toggle("active");
   })
+
+
+ 

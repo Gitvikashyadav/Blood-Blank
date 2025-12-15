@@ -7,23 +7,27 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    background: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
 
 .wrapper_login {
-    width: 90%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+    width: 67%;
     max-width: 1100px;
-    height: 650px;
+    height: 600px;
     background: #fff;
-    display: flex;
+    display: none;
     border-radius: 14px;
+    justify-content: center;
+   
     overflow: hidden;
     box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+     transition: all 0.9s ease;
+}
+
+.open{
+  display: flex;
 }
 
 /* LEFT SIDE */
@@ -162,7 +166,7 @@ form input:focus {
   width: 80%;
   max-width: 1200px;
   margin: 40px auto;
-  display: flex;
+  display: none;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -181,7 +185,7 @@ form input:focus {
 
 .drop_icon {
   width: 200px;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /* RIGHT PANEL */

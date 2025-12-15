@@ -6,8 +6,93 @@
     <title>Register</title>
     <link rel="stylesheet" href="Blood_Reg.css" />
     <link rel="stylesheet" href="Blood_log.css" />
+    <link rel="stylesheet" href="Blood.css">
+
+    <!-- <script src="Blood.js" defer></script> -->
+    <script src="Regi_log.js" defer></script>
   </head>
   <body>
+
+
+
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Image/blood-logo.png" alt="Logo" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" >Learn About Donation</a>
+           
+        </li>
+        <li class="dropdown1"><a href="#">Looking For Blood</a>
+            <div class="con_Looking_For_Blood">
+                  <div>Donar List</div>
+                  <div>Patien List</div>
+              </div>
+        </li>
+        <li class="dropdown2"><a href="#">Donate Blood</a>
+         <div class="con_Donate_Blood">
+              <div>Donar Register</div>
+              <div>Patien Register</div>
+          </div>
+        
+        </li>
+      </ul>
+      
+     
+
+      <div class="profile">
+         <img id="profile_Img" src="Image/images.jfif" alt="Profile" /> 
+            <div class="Dropdown_profile_Img">
+                <div><a href="">Edit</a></div>
+                <div><a href="Reg_log_page.html">Login</a> </div>
+            </div>
+        <div class="guest-btn">
+          <span id="Nav_btn">Register</span>
+          
+       </div>
+        <!-- <img id="Menu_Img" src="Image/Menu.png" alt="Profile" />
+        <ul id="nav-links-menu">
+        
+        <li><a href="#"><img id="profile_Menu_Img" src="Image/images.jfif" alt="Profile" /></a>
+           <div class="Dropdown_profile_Img2">
+                <div><a href="">Edit</a></div>
+                <div><a href="Reg_log_page.html">Login</a> </div>
+            </div>
+        </li>
+            
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Learn About Donation</a></li>
+        <li class="Menu_Dropdown1"><a href="#">Looking For Blood</a>
+        
+          <div class="con_Looking_For_Blood_menu">
+                <div>Donar List</div>
+                <div>Patien List</div>
+            </div>
+        </li>
+        <li class="Menu_Dropdown2"><a href="#">Donate Blood</a>
+        
+            <div class="con_Donate_Blood_menu">
+                  <div>Donar Register</div>
+                  <div>Patien Register</div>
+              </div>
+        </li>
+      </ul>
+
+      </div> -->
+    </nav>
+
+
+
+
+
+
+
+
     <div class="wrapper">
       <!-- LEFT SIDE -->
       <div class="left-panel">
@@ -16,7 +101,7 @@
 
       <!-- RIGHT SIDE -->
       <div class="right-panel">
-        <h1>Register</h1>
+        <h1>  Register</h1>
 
         <form>
           <label>Full Name</label>
@@ -34,7 +119,7 @@
           <button class="btn">Register</button>
 
           <p class="login-text">
-            Already have an account? <a href="#">Log In</a>
+            Already have an account? <a href="#" id="Login_Text">Log In</a>
           </p>
         </form>
       </div>
@@ -57,12 +142,12 @@
           <label>Password</label>
           <input type="password" placeholder="Enter your password" />
 
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <p class="forgot"><a href="#" id="forgo_Btn">Forgot Password?</a></p>
 
           <button class="btn">Login</button>
 
           <p class="signup-text">
-            Don't have an account? <a href="#">Sign up here</a>
+            Don't have an account? <a href="#" id="signUp_Text">Sign up here</a>
           </p>
         </form>
       </div>
@@ -72,7 +157,7 @@
     <div class="login_wrapper">
 
   <div class="left_panel">
-    <img src="blood-drop.png" alt="blood drop" class="drop_icon">
+    <img src="blood-drop.png"  class="drop_icon">
   </div>
 
   <div class="right_panel">
@@ -85,6 +170,18 @@
   </div>
 
 </div>
+
+
+
+<footer class="footer">
+  <p>© 2025 Blood Donation | All Rights Reserved by 
+     <span class="author">Vineeth Kumar</span>
+  </p>
+
+  <button class="scrollTopBtn" onclick="scrollToTop()">
+    ▲
+  </button>
+</footer>
 
   </body>
 </html>

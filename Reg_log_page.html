@@ -10,6 +10,8 @@
 
     <!-- <script src="Blood.js" defer></script> -->
     <script src="Regi_log.js" defer></script>
+    <script src="fetch_Data_login.js" defer></script>
+    <script src="Fetch_Reg_Data.js" defer></script>
   </head>
   <body>
 
@@ -103,18 +105,18 @@
       <div class="right-panel">
         <h1>  Register</h1>
 
-        <form>
+        <form id="Reg_form">
           <label>Full Name</label>
-          <input type="text" placeholder="Enter your full name" />
+          <input type="text" name="name"  placeholder="Enter your full name" />
 
           <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
+          <input type="email"  name="email" placeholder="Enter your email" />
 
           <label>Password</label>
-          <input type="password" placeholder="Enter your password" />
+          <input type="password"  name="password" placeholder="Enter your password" />
 
           <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm your password" />
+          <input type="password" name="pwd_Confirm" placeholder="Confirm your password" />
 
           <button class="btn">Register</button>
 
@@ -135,20 +137,22 @@
       <div class="right-panel">
         <h1>Login</h1>
 
-        <form>
+        <form id="login_form">
           <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
+          <input type="email" name="email" placeholder="Enter your email" />
 
           <label>Password</label>
-          <input type="password" placeholder="Enter your password" />
+          <input type="password" name="password" placeholder="Enter your password" />
 
           <p class="forgot"><a href="#" id="forgo_Btn">Forgot Password?</a></p>
 
-          <button class="btn">Login</button>
+          <button  class="btn">Login</button>
 
           <p class="signup-text">
             Don't have an account? <a href="#" id="signUp_Text">Sign up here</a>
           </p>
+          <label for="">rember me</label>
+          <input type="checkbox" name="check" id="Confirm">
         </form>
       </div>
     </div>

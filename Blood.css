@@ -353,7 +353,8 @@
 }
 .con_Looking_For_Blood_menu div,
 .con_Donate_Blood_menu div {
-  padding: 4px;
+  /* padding: 4px; */
+   border-radius: 3px ;
 }
 
 .con_Looking_For_Blood_menu div:hover {
@@ -364,6 +365,13 @@
 .con_Donate_Blood_menu div:hover {
   background-color: #d52462;
   cursor: pointer;
+}
+.con_Donate_Blood_menu div a{
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 18px !important;
+ 
+ 
 }
 
 #nav-links-menu li.Menu_Dropdown1:hover .con_Looking_For_Blood_menu {

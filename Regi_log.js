@@ -61,7 +61,7 @@
   forgo_Btn.addEventListener('click',()=>{
       Nav_btn.innerText='Login'
    
-     wrapper_login_Con.classList.remove("open");
+    wrapper_login_Con.classList.remove("open");
     login_wrapper_Con.style.display='flex'
      
   })
